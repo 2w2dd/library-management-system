@@ -49,6 +49,10 @@ function Login({ onLogin }) {
       <div style={{ textAlign: 'center', marginTop: 15 }}>
         <a href="/register" style={{ color: '#007bff' }}>No account? Register</a>
       </div>
+      <div style={{ textAlign: 'center', marginTop: 12, display: 'flex', justifyContent: 'center', gap: 14, fontSize: 14 }}>
+        <a href="/librarian-login" style={{ color: '#2563eb' }}>馆员登录</a>
+        <a href="/admin-login" style={{ color: '#2563eb' }}>管理员登录</a>
+      </div>
     </div>
   );
 }

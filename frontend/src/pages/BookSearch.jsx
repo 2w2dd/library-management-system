@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import IsbnBarcode from '../components/IsbnBarcode';
 
 function BookSearch() {
   const [searchTitle, setSearchTitle] = useState('');
@@ -270,6 +271,10 @@ function BookSearch() {
               <div style={{ marginTop: '20px', display: 'grid', gap: '10px' }}>
                 <p><strong>Author:</strong> {selectedBook.author}</p>
                 <p><strong>ISBN:</strong> {selectedBook.isbn}</p>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  <strong>ISBN Barcode:</strong>
+                  <IsbnBarcode isbn={selectedBook.isbn} />
+                </div>
                 <p><strong>Genre:</strong> {selectedBook.genre}</p>
                 <p><strong>Legacy Location:</strong> {selectedBook.shelfLocation || 'N/A'}</p>
                 <p>

@@ -49,6 +49,10 @@ function Register() {
       <div style={{ textAlign: 'center', marginTop: 15 }}>
         <a href="/" style={{ color: '#007bff' }}>Already have an account? Login</a>
       </div>
+      <div style={{ textAlign: 'center', marginTop: 12, display: 'flex', justifyContent: 'center', gap: 14, fontSize: 14 }}>
+        <a href="/librarian-login" style={{ color: '#2563eb' }}>馆员登录</a>
+        <a href="/admin-login" style={{ color: '#2563eb' }}>管理员登录</a>
+      </div>
     </div>
   );
 }
